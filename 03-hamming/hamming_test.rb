@@ -1,6 +1,7 @@
 gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
 require_relative 'hamming'
+require 'minitest/pride'
 
 class HammingTest < Minitest::Test
   def test_identical_strands
@@ -72,3 +73,11 @@ class HammingTest < Minitest::Test
     assert_raises(ArgumentError) { Hamming.compute('ATA', 'AGTG') }
   end
 end
+
+# class Hamming
+#   def compute
+#
+#   end
+#
+#
+# end
