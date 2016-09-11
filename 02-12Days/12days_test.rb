@@ -139,13 +139,13 @@ attr_accessor :gifts
 
   end
 
-  def self.read(file)
+  def self.read
     File.open('12days.txt', "r")
   end
 
   def self.sing
     whole_song = File.read('12days.txt')
 
-     whole_song
+    whole_song
   end
 end
